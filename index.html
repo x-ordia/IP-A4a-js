@@ -1,0 +1,320 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipolar</title>
+    <style>
+      body {
+        margin: 0%;
+        /* background-image: linear-gradient(ghostwhite,grey); */
+        background-color: #F7F7F7;
+      }
+      #nav {
+        background-color: #393E46;
+        color: aqua;
+        margin-top: 0px;
+        height: 62px;
+      }
+
+      #nav a {
+        float: left;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin:5px;
+        text-decoration: none;
+        padding-top: 13px;
+        color: #393E46;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 10px;
+        background-color: #F2E7D5;
+        height: 40px;
+      }
+      #nav a:hover {
+        float: left;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin:5px;
+        text-decoration: none;
+        color: #F2E7D5;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 10px;
+        background-color: #393E46;
+        height: 40px;
+      }
+
+      #big {
+        border-style: solid;
+        border-radius: 300px;
+        border-width: 0px;
+      }
+
+      @keyframes lines10 {
+        from{width: 10%}
+        to{width: 100%;}
+      }
+      @keyframes lines30 {
+        from{width: 30%}
+        to{width: 80%;}
+      }
+      @keyframes lines80 {
+        from{width: 80%}
+        to{width: 30%;}
+      }
+      @keyframes lines100 {
+        from{width: 100%}
+        to{width: 10%;}
+      }
+      #ten {
+        height: 4px;
+        margin-bottom: 2px;
+        background-color:lightslategray;
+        align-self: center;
+        animation-name: lines10;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #thirty {
+        height: 4px;
+        margin-bottom: 2px;
+        background-color:lightslategray;
+        align-self: center;
+        animation-name: lines30;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #eighty {
+        height: 4px;
+        margin-bottom: 2px;
+        background-color:lightslategray;
+        align-self: center;
+        animation-name: lines80;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #hundred {
+        height: 4px;
+        margin-bottom: 2px;
+        background-color:lightslategray;
+        align-self: center;
+        animation-name: lines100;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      td img {
+        border-width: 0px;
+        border-style: solid;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+      }
+
+      #forms {
+        background-color: #6D9886;
+        border-width: 0px;
+        border-style: solid;
+        border-radius: 20px;
+        padding-top: 15px;
+        padding-bottom:15px;
+        margin-top:5%;
+        margin-bottom:5%;
+        width:80%;
+      }
+      header {
+        background-color: #393E46;
+        margin: 0px;
+      }
+      footer {
+        color:white;
+        background-color: #393E46;
+      }
+      footer a {
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <script src="./form.js"></script>
+    <center>
+        <header background="header.jfif">
+            <img src="images/bipolar.png" alt="Bipolar">
+        </header>
+        <div id="nav">
+          <a href="./shirtSale.html" style="margin-left:15px;">Home</a>
+          <a href="./buyPage.html">My Cart</a>
+          <a href="#">Concerts</a>
+          <a href="#" style="margin-left:300px;">Music</a>
+          <a href="#" style="margin-left:345px;">Login</a>
+          <a href="#">Register</a>
+          <a href="#">Logout</a>
+        </div>
+        <br><br>
+        <div id="ten"></div>
+        <div id="thirty"></div>
+        <div width="50%"></div>
+        <div id="eighty"></div>
+        <div id="hundred"></div>
+        <img src="images/intro.png" alt="concert" width=100% id="big">
+        <div id="hundred"></div>
+        <div id="eighty"></div>
+        <div width="50%"></div>
+        <div id="thirty"></div>
+        <div id="ten"></div>
+        <br>
+        <section>
+          <h2>Merchandise</h2>
+          <br>
+              <br>
+              <table style="background-color: #6D9886; width:90%; 
+              padding-bottom:5%; padding-top:5%; border-style:solid;
+              border-width:0px; border-radius: 30px; padding-right: 40px;">
+                <tr align=center>
+                  <td><img src="images/black1.jpg" alt="black t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/black2.webp" alt="black t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/black3.jpg" alt="black t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/black4.jpg" alt="black t-shirt" width="250" height="250" align=right></td>
+                </tr>
+                <tr align=center>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                </tr>
+                <tr align=center>
+                  <td><img src="images/red1.jpg" alt="red t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/red2.png" alt="red t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/red3.png" alt="red t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/red4.jpg" alt="red t-shirt" width="250" height="250" align=right></td>
+                </tr>
+                <tr align=center>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                </tr>
+                <tr align=center>
+                  <td><img src="images/white1.jpg" alt="white t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/white2.webp" alt="white t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/white3.jpeg" alt="white t-shirt" width="250" hewhiteight="250" align=right></td>
+                  <td><img src="images/white4.jpeg" alt="white t-shirt" width="250" height="250" align=right></td>
+                </tr>
+                <tr align=center>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                </tr>
+                <tr align=center>
+                  <td><img src="images/blue1.jpg" alt="blue t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/blue2.jpg" alt="blue t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/blue3.jpg" alt="blue t-shirt" width="250" height="250" align=right></td>
+                  <td><img src="images/blue4.png" alt="blue t-shirt" width="250" height="250" align=right></td>
+                </tr>
+                <tr align=center>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                  <td> <button type="button" name="remove">-1</button><button type="button" name="add">+1</button> </td>
+                </tr>
+              </table>
+        </section>
+        <br>
+        <form id="forms" action="" name="my_form" onsubmit = "(validate());">
+          <table style="text-align: center;">
+            <tr>
+              <td>
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="Name">
+              </td>
+              <td>
+                <label for="Age">Age:</label>
+                <input type="number">
+              </td>
+              <td>
+                <label for="number">Contact Number:</label>
+                <input name="number" id="number" type="number">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Address: <textarea name="Address" id="" cols="50" rows="10" required></textarea>
+              </td>
+              <td>
+                <p>Gender:</p>
+                <input type="radio" name="Gender" >
+                <label for="Male">Male</label><br>
+                <input type="radio" name="Gender">
+                <label for="Female" >Female</label><br>
+                <input type="radio" name="Gender">
+                <label for="Other">Other</label>
+              </td>
+              <td> 
+                Tagline: <textarea name="tagline" id="tagline" cols="50" rows="10"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Email: <input type="email" name="email" id="">
+              </td>
+              <td>
+                <label for="Color">T-Shirt Color:</label>
+                <input type="color">
+              </td>
+              <td>
+                Size:
+                <select name="size" id="">
+                <option value="">--Select your Size--</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="XLarge">Extra Large</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Quantity:<input type="number" name="quantity" id="">
+              </td>
+              <td></td>
+              <td>
+                Date of Delivery: <input name="dod" type="date">
+              </td>
+            </tr>
+          </table>
+          <button onclick="generateReceipt()">Submit</button>
+        </form>
+        <footer align=center style="color: white;">
+          <br>
+          <table align=center style="color: white;">
+            <tbody align=center>
+              <tr>
+                <td width="300">Creator - Bhargav Bodhankar</td>
+                <td width="300"><a href="#">Profile</a></td>
+              </tr>
+              <tr>
+                <td width="300">Class - D15A</td>
+                <td width="300"><a href="https://github.com/x-ordia">Github</a></td>
+              </tr>
+              <tr>
+                <td width="300">Roll no - 4</td>
+                <td width="300"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2020.bhargav.bodhankar@ves.ac.in">Mail me</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          VESIT | Internet Programming | Lab | Assignment 1
+          <br><br>
+        </footer>
+    </center>
+</body>
